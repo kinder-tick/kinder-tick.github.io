@@ -113,6 +113,19 @@ body {
 }
 
 /* Sound Wave */
+.watch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(135deg, var(--card), var(--accent));
+    border-radius: 1.75rem;
+    box-shadow: inset 2px 2px 4px var(--shadow-light), inset -2px -2px 4px var(--shadow-dark), 
+                4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
+    padding: 1rem;
+}
+
 .soundwave-container {
     display: flex;
     align-items: center;
