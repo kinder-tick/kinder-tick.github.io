@@ -604,3 +604,41 @@ body {
     border-radius: 0.5rem;
     margin: 1rem 0;
 }
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-container a:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(46, 125, 50, 0.1));
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
